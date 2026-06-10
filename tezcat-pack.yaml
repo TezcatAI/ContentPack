@@ -1,0 +1,25 @@
+schema_version: 1
+namespace: tezcat
+name: "Tezcat Official Prompt Pack"
+version: "1.0.0"
+description: >
+  The first-party Tezcat capability-probe prompts. Installed and enabled by
+  default as a verified official source. Each prompt elicits whether an AI
+  agent exposes a particular capability (filesystem read, code execution,
+  internet access, external-system enumeration, capability self-disclosure).
+author: "TezcatAI"
+homepage: "https://github.com/TezcatAI/PromptPack"
+min_tezcat_version: "0.1.0"
+contents:
+  - type: prompt
+    path: prompts/code-execution-direct.yaml
+  - type: prompt
+    path: prompts/external-systems-list.yaml
+  - type: prompt
+    path: prompts/filesystem-read-direct.yaml
+  - type: prompt
+    path: prompts/internet-access-direct.yaml
+  - type: prompt
+    path: prompts/structured-capability-survey.yaml
+  - type: prompt
+    path: prompts/system-prompt-disclosure.yaml
