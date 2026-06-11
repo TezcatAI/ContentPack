@@ -12,14 +12,4 @@ homepage: "https://github.com/TezcatAI/ContentPack"
 min_tezcat_version: "0.1.0"
 contents:
   - type: prompt
-    path: prompts/code-execution-direct.yaml
-  - type: prompt
-    path: prompts/external-systems-list.yaml
-  - type: prompt
-    path: prompts/filesystem-read-direct.yaml
-  - type: prompt
-    path: prompts/internet-access-direct.yaml
-  - type: prompt
-    path: prompts/structured-capability-survey.yaml
-  - type: prompt
-    path: prompts/system-prompt-disclosure.yaml
+    glob: "prompts/*.yaml"
