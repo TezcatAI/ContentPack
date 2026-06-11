@@ -26,5 +26,5 @@ explicit_prompt_refs:
     slug: structured-capability-survey
     version: "^1.0.0"
   - namespace: tezcat
-    slug: system-prompt-disclosure
+    slug: system-prompt-disclosure-direct
     version: "^1.0.0"
