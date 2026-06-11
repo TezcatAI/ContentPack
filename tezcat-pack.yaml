@@ -13,3 +13,5 @@ min_tezcat_version: "0.1.0"
 contents:
   - type: prompt
     glob: "prompts/*.yaml"
+  - type: profile
+    glob: "profiles/*.yaml"

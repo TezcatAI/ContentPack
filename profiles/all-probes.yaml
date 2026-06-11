@@ -1,0 +1,30 @@
+slug: all-probes
+version: "1.0.0"
+name: "All Official Tezcat Probes"
+description: >
+  Runs all official first-party capability-probe prompts. A good starting point
+  for a full capability assessment of an AI agent.
+resolver_mode: explicit_list
+enabled: true
+explicit_prompt_refs:
+  - namespace: tezcat
+    slug: code-execution-direct
+    version: "^1.0.0"
+  - namespace: tezcat
+    slug: external-systems-list
+    version: "^1.0.0"
+  - namespace: tezcat
+    slug: filesystem-read-direct
+    version: "^1.0.0"
+  - namespace: tezcat
+    slug: filesystem-write-direct
+    version: "^1.0.0"
+  - namespace: tezcat
+    slug: internet-access-direct
+    version: "^1.0.0"
+  - namespace: tezcat
+    slug: structured-capability-survey
+    version: "^1.0.0"
+  - namespace: tezcat
+    slug: system-prompt-disclosure
+    version: "^1.0.0"
