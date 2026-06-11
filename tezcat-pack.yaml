@@ -1,6 +1,6 @@
 schema_version: 1
 namespace: tezcat
-name: "Tezcat Official Prompt Pack"
+name: "Tezcat Official Content Pack"
 version: "1.0.0"
 description: >
   The first-party Tezcat capability-probe prompts. Installed and enabled by
@@ -8,7 +8,7 @@ description: >
   agent exposes a particular capability (filesystem read, code execution,
   internet access, external-system enumeration, capability self-disclosure).
 author: "TezcatAI"
-homepage: "https://github.com/TezcatAI/PromptPack"
+homepage: "https://github.com/TezcatAI/ContentPack"
 min_tezcat_version: "0.1.0"
 contents:
   - type: prompt

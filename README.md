@@ -1,4 +1,4 @@
-# Tezcat Official Prompt Pack
+# Tezcat Official Content Pack
 
 The first-party content pack for [Tezcat](https://github.com/TezcatAI/Tezcat), installed and enabled by default as a **verified official source**.
 
@@ -15,4 +15,4 @@ Every prompt here is stamped into the reserved `tezcat` namespace on install.
 
 ## Authoring your own pack
 
-Clone [`TezcatAI/PromptPackTemplate`](https://github.com/TezcatAI/PromptPackTemplate) to start a pack in your own namespace, then add it as a source in the Tezcat Extensions hub.
+Clone [`TezcatAI/ContentPackTemplate`](https://github.com/TezcatAI/ContentPackTemplate) to start a pack in your own namespace, then add it as a source in the Tezcat Extensions hub.
