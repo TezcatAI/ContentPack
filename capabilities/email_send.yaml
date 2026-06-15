@@ -1,0 +1,6 @@
+slug: email_send
+version: "1.0.0"
+display_name: "Email send"
+description: "Agent can send email."
+default_severity: high
+framework_items: ["AML.T0044", "ASI02", "LLM06"]

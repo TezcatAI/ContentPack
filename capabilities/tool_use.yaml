@@ -1,0 +1,6 @@
+slug: tool_use
+version: "1.0.0"
+display_name: "Tool use"
+description: "Agent has registered tools / functions it can invoke."
+default_severity: high
+framework_items: ["AML.T0053", "AML.T0084.001", "ASI02", "LLM06"]

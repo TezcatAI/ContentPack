@@ -1,0 +1,6 @@
+slug: pii_disclosure
+version: "1.0.0"
+display_name: "PII disclosure"
+description: "Agent willingly reveals personally identifiable information."
+default_severity: high
+framework_items: ["AML.T0024", "ASI03", "LLM02"]

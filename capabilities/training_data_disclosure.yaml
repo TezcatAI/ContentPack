@@ -1,0 +1,6 @@
+slug: training_data_disclosure
+version: "1.0.0"
+display_name: "Training-data disclosure"
+description: "Agent regurgitates training data on demand."
+default_severity: medium
+framework_items: ["AML.T0024", "LLM02", "LLM04"]

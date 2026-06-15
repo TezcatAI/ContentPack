@@ -1,0 +1,6 @@
+slug: model_identity_disclosure
+version: "1.0.0"
+display_name: "Model identity disclosure"
+description: "Agent reveals which underlying model powers it."
+default_severity: low
+framework_items: ["AML.T0024", "LLM02"]
