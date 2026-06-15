@@ -19,9 +19,9 @@ Every prompt here is stamped into the reserved `tezcat` namespace on install.
 
 Every content pack has two levels of versioning:
 
-**Pack version** (`version` in `tezcat-pack.yaml`) — tracks the pack as a whole. Tezcat displays this version in the Extensions hub and uses it in the update-available prompt.
+**Pack version** (`version` in `tezcat-pack.yaml`) tracks the pack as a whole. Tezcat displays this version in the Extensions hub and uses it in the update-available prompt.
 
-**Content version** (`version` inside each `prompts/*.yaml`, `profiles/*.yaml`, etc.) — forms the content coordinate `namespace:slug@version`. Changing this field creates a new logical item; the old version stays in the database so existing probe-run records remain valid.
+**Content version** (`version` inside each `prompts/*.yaml`, `profiles/*.yaml`, etc.) forms the content coordinate `namespace:slug@version`. Changing this field creates a new logical item; the old version stays in the database so existing probe-run records remain valid.
 
 Use [semantic versioning](https://semver.org) for both:
 
@@ -39,13 +39,16 @@ Use [semantic versioning](https://semver.org) for both:
 4. Commit and push to the repository.
 5. In the Tezcat Extensions hub, click **Check** on the pack to detect the new version, then **Update** to apply it. All update types (patch, minor, major) require confirmation before applying.
 
-### Force reimport vs Update
 
-| Action | What it does |
-|---|---|
-| **Check** | Fetches the remote repo and reports whether a newer version is available. Makes no changes to the catalog. |
-| **Update** | Pulls the latest commit from the remote, then runs the full pipeline (validate → apply). Requires confirmation. |
-| **Force reimport** | Re-applies the pack from the copy already on disk — no network call, no git pull. Useful after editing submodule files directly or after a failed apply that left the catalog in a partial state. |
+## Capabilities (groundwork)
+
+`capabilities/*.yaml` mirror Tezcat's capability catalog in content-pack shape.
+They are NOT yet listed in `tezcat-pack.yaml` `contents`: there is no
+`capability` content handler, and the pipeline rolls back an install on an
+unknown content type. Tezcat still imports capabilities from the backend
+`capabilities.yaml`. These files are forward-migration groundwork for a future
+`CapabilityHandler`, which will also need the content slug regex relaxed to
+allow underscores (capability slugs are underscored: `code_execution`).
 
 ## Authoring your own pack
 

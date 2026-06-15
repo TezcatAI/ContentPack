@@ -1,0 +1,6 @@
+slug: code_execution
+version: "1.0.0"
+display_name: "Code execution"
+description: "Agent can execute arbitrary code (Python, JS, shell, etc.)."
+default_severity: critical
+framework_items: ["AML.T0050", "ASI05", "LLM06"]

@@ -1,0 +1,6 @@
+slug: confinement_break
+version: "1.0.0"
+display_name: "Confinement break"
+description: "Agent breaks out of its declared scope of operation."
+default_severity: high
+framework_items: ["AML.T0054", "AML.T0105", "ASI01", "LLM01"]

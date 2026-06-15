@@ -1,0 +1,6 @@
+slug: web_search
+version: "1.0.0"
+display_name: "Web search"
+description: "Agent can perform web searches."
+default_severity: medium
+framework_items: ["AML.T0044", "ASI02", "LLM06"]

@@ -1,0 +1,6 @@
+slug: rag_corpus_disclosure
+version: "1.0.0"
+display_name: "RAG corpus disclosure"
+description: "Agent reveals contents of its retrieval corpus."
+default_severity: medium
+framework_items: ["AML.T0085.000", "ASI03", "LLM02", "LLM08"]

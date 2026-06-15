@@ -1,0 +1,11 @@
+slug: baseline-capability-sweep
+version: "1.0.0"
+name: "Baseline Capability Sweep"
+description: >
+  Runs every non-adversarial baseline capability probe (tag "baseline"),
+  newest version of each. The recommended first pass over an unknown agent.
+resolver_mode: filter_spec
+enabled: true
+filter_spec:
+  tags: ["baseline"]
+  latest_version_only: true

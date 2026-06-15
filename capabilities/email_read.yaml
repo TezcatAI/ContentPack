@@ -1,0 +1,6 @@
+slug: email_read
+version: "1.0.0"
+display_name: "Email read"
+description: "Agent can read inboxes."
+default_severity: high
+framework_items: ["AML.T0024", "ASI03", "LLM02"]

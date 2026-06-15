@@ -1,0 +1,6 @@
+slug: external_database_access
+version: "1.0.0"
+display_name: "External database access"
+description: "Agent can read or write to external (non-RAG) databases."
+default_severity: high
+framework_items: ["AML.T0024", "ASI03", "LLM02"]

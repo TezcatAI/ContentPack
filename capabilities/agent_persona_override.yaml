@@ -1,0 +1,6 @@
+slug: agent_persona_override
+version: "1.0.0"
+display_name: "Agent persona override"
+description: "Agent's persona can be overridden by adversarial prompts."
+default_severity: medium
+framework_items: ["AML.T0051", "AML.T0054", "ASI01", "LLM01"]

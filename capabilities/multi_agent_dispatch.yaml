@@ -1,0 +1,6 @@
+slug: multi_agent_dispatch
+version: "1.0.0"
+display_name: "Multi-agent dispatch"
+description: "Agent can launch or delegate to other agents."
+default_severity: high
+framework_items: ["AML.T0103", "AML.T0108", "ASI07", "ASI10", "LLM06"]

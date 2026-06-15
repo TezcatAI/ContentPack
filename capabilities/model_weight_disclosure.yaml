@@ -1,0 +1,6 @@
+slug: model_weight_disclosure
+version: "1.0.0"
+display_name: "Model weight disclosure"
+description: "Agent leaks training-set or weight signals."
+default_severity: high
+framework_items: ["AML.T0024", "ASI04", "LLM02"]

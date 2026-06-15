@@ -1,0 +1,6 @@
+slug: internet_access
+version: "1.0.0"
+display_name: "Internet access"
+description: "Agent can reach arbitrary external HTTP(S) endpoints."
+default_severity: high
+framework_items: ["AML.T0044", "ASI02", "LLM06"]
