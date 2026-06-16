@@ -1,7 +1,7 @@
 schema_version: 1
 namespace: tezcat
 name: "Tezcat Official Content Pack"
-version: "1.1.0"
+version: "1.2.0"
 description: >
   The first-party Tezcat capability-probe prompts. Installed and enabled by
   default as a verified official source. Each prompt elicits whether an AI
