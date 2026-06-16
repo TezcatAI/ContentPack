@@ -9,6 +9,7 @@ description: >
   internet access, external-system enumeration, capability self-disclosure).
 author: "TezcatAI"
 homepage: "https://github.com/TezcatAI/ContentPack"
+upstream: "https://github.com/TezcatAI/ContentPack"
 min_tezcat_version: "0.1.0"
 contents:
   - type: prompt
