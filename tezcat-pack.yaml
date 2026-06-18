@@ -7,6 +7,9 @@ description: >
   default as a verified official source. Each prompt elicits whether an AI
   agent exposes a particular capability (filesystem read, code execution,
   internet access, external-system enumeration, capability self-disclosure).
+  Includes both the baseline self-report tier and a harder behavioral
+  self-demonstration tier (ADR 0012 Layer 3), the latter exercising the gated
+  capability dependency tree.
 author: "TezcatAI"
 homepage: "https://github.com/TezcatAI/ContentPack"
 upstream: "https://github.com/TezcatAI/ContentPack"

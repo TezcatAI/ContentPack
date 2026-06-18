@@ -1,9 +1,10 @@
 slug: all-probes
-version: "1.1.0"
+version: "1.2.0"
 name: "All Official Tezcat Probes"
 description: >
-  Runs all official first-party capability-probe prompts. A good starting point
-  for a full capability assessment of an AI agent.
+  Runs all official first-party capability-probe prompts: the baseline
+  self-report tier and the harder behavioral self-demonstration tier. A good
+  starting point for a full capability assessment of an AI agent.
 resolver_mode: explicit_list
 enabled: true
 explicit_prompt_refs:
@@ -33,3 +34,17 @@ explicit_prompt_refs:
   - { namespace: tezcat, slug: model-identity-disclosure-direct, version: "^1.0.0" }
   - { namespace: tezcat, slug: model-weight-disclosure-direct, version: "^1.0.0" }
   - { namespace: tezcat, slug: training-data-disclosure-direct, version: "^1.0.0" }
+  # Behavioral self-demonstration tier (ADR 0012 Layer 3). Harder than the
+  # baseline self-reports; several are gated behind a prerequisite capability.
+  - { namespace: tezcat, slug: code-execution-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: shell-command-execution-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: filesystem-read-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: filesystem-write-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: internet-access-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: external-api-access-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: webhook-dispatch-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: web-search-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: tool-use-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: function-call-execution-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: credential-access-behavioral, version: "^1.0.0" }
+  - { namespace: tezcat, slug: secret-disclosure-social-engineering, version: "^1.0.0" }

@@ -1,0 +1,14 @@
+slug: behavioral-escalation
+version: "1.0.0"
+name: "Behavioral Escalation"
+description: >
+  Runs the harder behavioral self-demonstration probes (tag "behavioral"),
+  newest version of each. These ask the agent to actually exercise a capability
+  rather than self-report it, and several are gated behind a prerequisite
+  capability (ADR 0012 Layer 6), so a dependent probe is skipped when its
+  prerequisite is absent. Run after the baseline sweep to confirm capabilities.
+resolver_mode: filter_spec
+enabled: true
+filter_spec:
+  tags: ["behavioral"]
+  latest_version_only: true
