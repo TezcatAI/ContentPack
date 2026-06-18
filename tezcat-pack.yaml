@@ -1,12 +1,15 @@
 schema_version: 1
 namespace: tezcat
 name: "Tezcat Official Content Pack"
-version: "1.1.0"
+version: "1.2.0"
 description: >
   The first-party Tezcat capability-probe prompts. Installed and enabled by
   default as a verified official source. Each prompt elicits whether an AI
   agent exposes a particular capability (filesystem read, code execution,
   internet access, external-system enumeration, capability self-disclosure).
+  Includes both the baseline self-report tier and a harder behavioral
+  self-demonstration tier (ADR 0012 Layer 3), the latter exercising the gated
+  capability dependency tree.
 author: "TezcatAI"
 homepage: "https://github.com/TezcatAI/ContentPack"
 min_tezcat_version: "0.1.0"
