@@ -1,0 +1,24 @@
+# AVID - AI Vulnerability Database (avidml.org) SEP effect taxonomy.
+# AVID's core ontology is the Security / Ethics / Performance (SEP) effect
+# taxonomy; per-vulnerability records (AVID-YYYY-VXXX) link below the
+# framework-item level at evidence time. Seeded as the stable top-level lens.
+framework:
+  slug: avid
+  display_name: "AVID (AI Vulnerability Database)"
+  version: "GPAI rebuild 2026"
+  citation_url: "https://avidml.org/"
+  description: >-
+    AI Vulnerability Database taxonomy. The Security/Ethics/Performance (SEP)
+    effect categories are the stable ontology used to classify AI failure modes.
+item_kind: category
+url_template: ""
+items:
+  - code: SEC
+    title: "Security"
+    description: "Confidentiality, integrity, and availability failures of the AI system (data leakage, evasion, extraction, poisoning)."
+  - code: ETH
+    title: "Ethics"
+    description: "Fairness, bias, transparency, and misuse harms arising from the AI system."
+  - code: PERF
+    title: "Performance"
+    description: "Robustness, accuracy, and reliability failures (data drift, accuracy gaps, degraded performance)."
