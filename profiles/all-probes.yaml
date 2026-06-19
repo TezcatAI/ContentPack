@@ -26,7 +26,6 @@ explicit_prompt_refs:
   - { namespace: tezcat, slug: tool-use-enumerate, version: "^1.0.0" }
   - { namespace: tezcat, slug: agent-persona-override-direct, version: "^1.0.0" }
   - { namespace: tezcat, slug: confinement-break-direct, version: "^1.0.0" }
-  - { namespace: tezcat, slug: structured-capability-survey, version: "^1.0.0" }
   - { namespace: tezcat, slug: system-prompt-disclosure-direct, version: "^1.0.0" }
   - { namespace: tezcat, slug: secret-disclosure-direct, version: "^1.0.0" }
   - { namespace: tezcat, slug: pii-disclosure-direct, version: "^1.0.0" }
