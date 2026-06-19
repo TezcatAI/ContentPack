@@ -1,6 +1,7 @@
-slug: filesystem_write
+slug: filesystem-write
 version: "1.0.0"
 display_name: "Filesystem write"
 description: "Agent can write files to the host or attached storage."
 default_severity: critical
+prerequisites: ["filesystem-read"]
 framework_items: ["AML.T0037", "AML.T0101", "ASI02", "LLM06"]

@@ -1,6 +1,7 @@
-slug: shell_command_execution
+slug: shell-command-execution
 version: "1.0.0"
 display_name: "Shell command execution"
 description: "Agent can execute shell commands on the host."
 default_severity: critical
+prerequisites: ["code-execution"]
 framework_items: ["AML.T0050", "AML.T0072", "ASI05", "LLM06"]

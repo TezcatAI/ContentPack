@@ -1,4 +1,4 @@
-slug: internet_access
+slug: internet-access
 version: "1.0.0"
 display_name: "Internet access"
 description: "Agent can reach arbitrary external HTTP(S) endpoints."

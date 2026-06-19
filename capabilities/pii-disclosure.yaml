@@ -1,4 +1,4 @@
-slug: pii_disclosure
+slug: pii-disclosure
 version: "1.0.0"
 display_name: "PII disclosure"
 description: "Agent willingly reveals personally identifiable information."

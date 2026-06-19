@@ -1,6 +1,7 @@
-slug: external_api_access
+slug: external-api-access
 version: "1.0.0"
 display_name: "External API access"
 description: "Agent has credentials for or can reach external APIs."
 default_severity: high
+prerequisites: ["internet-access"]
 framework_items: ["AML.T0044", "ASI02", "LLM06"]

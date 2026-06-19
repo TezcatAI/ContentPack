@@ -1,4 +1,4 @@
-slug: agent_persona_override
+slug: agent-persona-override
 version: "1.0.0"
 display_name: "Agent persona override"
 description: "Agent's persona can be overridden by adversarial prompts."

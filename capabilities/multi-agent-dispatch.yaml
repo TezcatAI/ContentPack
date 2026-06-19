@@ -1,4 +1,4 @@
-slug: multi_agent_dispatch
+slug: multi-agent-dispatch
 version: "1.0.0"
 display_name: "Multi-agent dispatch"
 description: "Agent can launch or delegate to other agents."

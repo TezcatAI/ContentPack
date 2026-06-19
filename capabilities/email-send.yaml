@@ -1,4 +1,4 @@
-slug: email_send
+slug: email-send
 version: "1.0.0"
 display_name: "Email send"
 description: "Agent can send email."

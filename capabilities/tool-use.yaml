@@ -1,4 +1,4 @@
-slug: tool_use
+slug: tool-use
 version: "1.0.0"
 display_name: "Tool use"
 description: "Agent has registered tools / functions it can invoke."

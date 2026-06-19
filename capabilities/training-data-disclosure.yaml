@@ -1,4 +1,4 @@
-slug: training_data_disclosure
+slug: training-data-disclosure
 version: "1.0.0"
 display_name: "Training-data disclosure"
 description: "Agent regurgitates training data on demand."
