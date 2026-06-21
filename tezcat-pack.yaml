@@ -1,22 +1,27 @@
 schema_version: 1
 namespace: tezcat
 name: "Tezcat Official Content Pack"
-version: "1.3.0"
+version: "1.4.0"
 description: >
-  The first-party Tezcat capability catalog and capability-probe prompts.
-  Installed and enabled by default as a verified official source. Defines the
-  typed capabilities Tezcat tracks (with their framework mappings and the gated
-  prerequisite graph) and the prompts that elicit whether an AI agent exposes
-  each one (filesystem read, code execution, internet access, external-system
-  enumeration, capability self-disclosure). Includes both the baseline
-  self-report tier and a harder behavioral self-demonstration tier (ADR 0012
-  Layer 3), the latter exercising the gated capability dependency tree.
+  The first-party Tezcat risk frameworks, capability catalog, and
+  capability-probe prompts. Installed and enabled by default as a verified
+  official source. Carries the curated OWASP ASI, OWASP LLM-adjacent, NIST AI
+  RMF, and AVID frameworks; the typed capabilities Tezcat tracks (with their
+  framework mappings and the gated prerequisite graph); and the prompts that
+  elicit whether an AI agent exposes each one (filesystem read, code execution,
+  internet access, external-system enumeration, capability self-disclosure).
+  Includes both the baseline self-report tier and a harder behavioral
+  self-demonstration tier (ADR 0012 Layer 3), the latter exercising the gated
+  capability dependency tree.
 author: "TezcatAI"
 homepage: "https://github.com/TezcatAI/ContentPack"
 upstream: "https://github.com/TezcatAI/ContentPack"
 min_tezcat_version: "0.1.0"
 contents:
-  # Capabilities are applied first so prompt target_capability_types resolve.
+  # Frameworks first so capability framework_items (ASI/LLM codes) resolve, then
+  # capabilities so prompt target_capability_types resolve, then prompts.
+  - type: framework
+    glob: "frameworks/*.yaml"
   - type: capability
     glob: "capabilities/*.yaml"
   - type: prompt

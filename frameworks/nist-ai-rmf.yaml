@@ -1,0 +1,65 @@
+# NIST AI RMF 1.0 (AI 100-1) four functions + AI 600-1 Generative AI Profile
+# (the 12 GenAI risk categories). Governance/compliance overlay, not tactical
+# tagging. NIST publishes canonical PDFs only; this is a derived seed.
+framework:
+  slug: nist-ai-rmf
+  display_name: "NIST AI RMF + GenAI Profile"
+  version: "AI 100-1 (2023) + AI 600-1 (2024)"
+  citation_url: "https://www.nist.gov/itl/ai-risk-management-framework"
+  description: >-
+    NIST AI Risk Management Framework core functions (Govern, Map, Measure,
+    Manage) plus the AI 600-1 Generative AI Profile's twelve GenAI risk
+    categories. Used as a governance/compliance lens.
+item_kind: category
+url_template: ""
+items:
+  # Core functions (AI 100-1)
+  - code: GOVERN
+    title: "Govern"
+    description: "Cultivate a culture of risk management; policies, accountability, oversight."
+  - code: MAP
+    title: "Map"
+    description: "Establish context and identify risks related to the AI system."
+  - code: MEASURE
+    title: "Measure"
+    description: "Analyse, assess, benchmark, and monitor AI risk."
+  - code: MANAGE
+    title: "Manage"
+    description: "Prioritise and act on risks; allocate resources to treat them."
+  # AI 600-1 Generative AI Profile risk categories
+  - code: GAI-1
+    title: "CBRN information or capabilities"
+    description: "Eased access to chemical, biological, radiological, or nuclear weapons information."
+  - code: GAI-2
+    title: "Confabulation"
+    description: "Confidently produced false or misleading content (hallucination)."
+  - code: GAI-3
+    title: "Dangerous, violent, or hateful content"
+    description: "Generation of violent, inciting, radicalising, or hateful content."
+  - code: GAI-4
+    title: "Data privacy"
+    description: "Leakage or inference of personal/sensitive data."
+  - code: GAI-5
+    title: "Environmental impacts"
+    description: "Resource and energy costs of training and operating GenAI."
+  - code: GAI-6
+    title: "Harmful bias or homogenization"
+    description: "Amplification of bias or loss of output diversity."
+  - code: GAI-7
+    title: "Human-AI configuration"
+    description: "Misaligned human oversight, over-reliance, or automation bias."
+  - code: GAI-8
+    title: "Information integrity"
+    description: "Generation/spread of mis- and disinformation at scale."
+  - code: GAI-9
+    title: "Information security"
+    description: "Lowered barrier to cyberattacks; model/data security failures."
+  - code: GAI-10
+    title: "Intellectual property"
+    description: "Reproduction or infringement of copyrighted/proprietary material."
+  - code: GAI-11
+    title: "Obscene, degrading, and/or abusive content"
+    description: "Generation of CSAM, NCII, or other abusive content."
+  - code: GAI-12
+    title: "Value chain and component integration"
+    description: "Risks from third-party data, models, and components in the GenAI value chain."
