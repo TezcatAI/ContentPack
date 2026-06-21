@@ -1,4 +1,4 @@
-slug: model_identity_disclosure
+slug: model-identity-disclosure
 version: "1.0.0"
 display_name: "Model identity disclosure"
 description: "Agent reveals which underlying model powers it."

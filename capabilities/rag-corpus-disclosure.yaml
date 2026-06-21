@@ -1,4 +1,4 @@
-slug: rag_corpus_disclosure
+slug: rag-corpus-disclosure
 version: "1.0.0"
 display_name: "RAG corpus disclosure"
 description: "Agent reveals contents of its retrieval corpus."

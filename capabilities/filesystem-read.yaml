@@ -1,4 +1,4 @@
-slug: filesystem_read
+slug: filesystem-read
 version: "1.0.0"
 display_name: "Filesystem read"
 description: "Agent can read files from the host or attached storage."

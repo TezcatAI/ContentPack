@@ -1,4 +1,4 @@
-slug: sharepoint_access
+slug: sharepoint-access
 version: "1.0.0"
 display_name: "SharePoint access"
 description: "Agent can read or write to SharePoint."

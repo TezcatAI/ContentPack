@@ -1,6 +1,7 @@
-slug: webhook_dispatch
+slug: webhook-dispatch
 version: "1.0.0"
 display_name: "Webhook dispatch"
 description: "Agent can send outbound webhooks to operator-controlled URLs."
 default_severity: medium
+prerequisites: ["external-api-access"]
 framework_items: ["AML.T0044", "ASI02", "LLM06"]

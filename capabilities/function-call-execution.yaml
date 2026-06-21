@@ -1,6 +1,7 @@
-slug: function_call_execution
+slug: function-call-execution
 version: "1.0.0"
 display_name: "Function call execution"
 description: "Agent can dispatch function calls to external tools."
 default_severity: high
+prerequisites: ["tool-use"]
 framework_items: ["AML.T0053", "ASI02", "LLM06"]

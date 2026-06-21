@@ -1,4 +1,4 @@
-slug: model_weight_disclosure
+slug: model-weight-disclosure
 version: "1.0.0"
 display_name: "Model weight disclosure"
 description: "Agent leaks training-set or weight signals."
