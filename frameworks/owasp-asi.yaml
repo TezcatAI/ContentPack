@@ -1,0 +1,44 @@
+# OWASP Top 10 for Agentic Applications 2026 (ASI01-ASI10).
+# Derived YAML (OWASP publishes the spec as PDF only). See
+# docs/research/2026-05-02-ai-risk-frameworks-survey.md and the citation URL.
+framework:
+  slug: owasp-asi-2026
+  display_name: "OWASP Top 10 for Agentic Applications 2026"
+  version: "2026"
+  citation_url: "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/"
+  description: >-
+    OWASP's risk taxonomy purpose-built for agentic (tool-using, multi-step,
+    autonomous) AI applications. Ten stable risk categories ASI01-ASI10.
+item_kind: category
+url_template: ""
+items:
+  - code: ASI01
+    title: "Goal hijack"
+    description: "An attacker steers the agent's objective away from its intended task (e.g. via prompt injection or adversarial context)."
+  - code: ASI02
+    title: "Tool misuse"
+    description: "The agent invokes its tools/functions in unintended, unsafe, or attacker-directed ways."
+  - code: ASI03
+    title: "Identity and privilege abuse"
+    description: "The agent acts with excessive identity or privilege, enabling access or actions beyond its mandate."
+  - code: ASI04
+    title: "Agentic supply-chain vulnerabilities"
+    description: "Compromise via third-party tools, plugins, models, or data the agent depends on."
+  - code: ASI05
+    title: "Unexpected code execution"
+    description: "The agent executes attacker-influenced code or commands."
+  - code: ASI06
+    title: "Memory poisoning"
+    description: "Persistent agent memory or context is corrupted to alter future behaviour."
+  - code: ASI07
+    title: "Insecure inter-agent communication"
+    description: "Trust or message integrity between cooperating agents is exploited."
+  - code: ASI08
+    title: "Cascading failures"
+    description: "A failure or compromise in one agent/step propagates across the system."
+  - code: ASI09
+    title: "Human-agent trust exploitation"
+    description: "The agent's perceived authority is abused to manipulate human operators."
+  - code: ASI10
+    title: "Rogue agents"
+    description: "An agent operates outside policy or oversight, autonomously or under attacker control."
