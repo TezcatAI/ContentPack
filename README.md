@@ -8,10 +8,13 @@ A *content pack* is a git repository with a `tezcat-pack.yaml` manifest plus one
 
 ```
 tezcat-pack.yaml      # the manifest (namespace, version, contents list)
+frameworks/*.yaml     # one risk framework per file (OWASP ASI, NIST AI RMF, AVID)
+capabilities/*.yaml   # one typed capability per file, with framework mappings
 prompts/*.yaml        # one capability-probe prompt per file
+profiles/*.yaml       # one probe profile (a named set of prompts) per file
 ```
 
-Every prompt here is stamped into the reserved `tezcat` namespace on install.
+Every item here is stamped into the reserved `tezcat` namespace on install. The manifest lists the content types in dependency order (frameworks, then capabilities, then prompts, then profiles) so that each item's cross-references resolve as the pipeline applies them: capabilities reference framework items, prompts reference capability types, and profiles reference prompts.
 
 ## Releasing updates
 
@@ -33,22 +36,29 @@ Use [semantic versioning](https://semver.org) for both:
 
 ### Release workflow
 
-1. Edit content files under `prompts/` or `profiles/`.
+1. Edit content files under `frameworks/`, `capabilities/`, `prompts/`, or `profiles/`.
 2. Bump the `version` field in any changed content file.
 3. Bump `version` in `tezcat-pack.yaml` to reflect the scope of the change.
 4. Commit and push to the repository.
 5. In the Tezcat Extensions hub, click **Check** on the pack to detect the new version, then **Update** to apply it. All update types (patch, minor, major) require confirmation before applying.
 
 
-## Capabilities (groundwork)
+## Prompts and prompt profiles
 
-`capabilities/*.yaml` mirror Tezcat's capability catalog in content-pack shape.
-They are NOT yet listed in `tezcat-pack.yaml` `contents`: there is no
-`capability` content handler, and the pipeline rolls back an install on an
-unknown content type. Tezcat still imports capabilities from the backend
-`capabilities.yaml`. These files are forward-migration groundwork for a future
-`CapabilityHandler`, which will also need the content slug regex relaxed to
-allow underscores (capability slugs are underscored: `code_execution`).
+`prompts/*.yaml` are the capability probes: the text sent to a target agent plus the parser rules that turn its reply into a per-capability present/absent finding. Each prompt targets one or more capability types by slug and comes in one of two tiers:
+
+- **Direct** (`*-direct`, tag `baseline`) asks the agent to self-report whether it has a capability. Low difficulty; a model can simply claim anything.
+- **Behavioral** (`*-behavioral`, tag `behavioral`, ADR 0012 Layer 3) asks the agent to actually exercise the capability and return a computed sentinel, which is harder to fake. When the target capability declares `prerequisites`, Tezcat gates the probe: it is skipped in a run when a prerequisite was found absent.
+
+`profiles/*.yaml` are named, runnable sets of prompts. A profile selects its prompts either dynamically by tag (`resolver_mode: filter_spec`, e.g. `baseline-capability-sweep` and `behavioral-escalation`) or as a pinned, ordered list of coordinates (`resolver_mode: explicit_list`, e.g. `all-probes`).
+
+## Frameworks and capabilities
+
+`frameworks/*.yaml` and `capabilities/*.yaml` are first-class pack content, listed in `tezcat-pack.yaml` and applied by their own content handlers.
+
+**Frameworks** carry the curated risk taxonomies Tezcat maps findings against: OWASP Top 10 for Agentic Applications, NIST AI RMF, and AVID. Each file declares the framework metadata and its enumerated items (categories, controls, or taxonomy codes).
+
+**Capabilities** are the typed capabilities Tezcat tracks (filesystem read, code execution, credential access, and so on). Each file carries a kebab-case slug, a default severity, and `framework_items` that link the capability to the framework codes it maps to. Prompts target these capability types by slug.
 
 ## Authoring your own pack
 
